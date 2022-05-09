@@ -27,6 +27,7 @@ body {
     border-radius: 16px;
     padding: 25px;
     margin: auto;
+    box-shadow: 0 20px 20px hsla(217, 54%, 11%, .4);
 }
 
 .card__hero {
@@ -112,7 +113,7 @@ body {
 
 .card__horizontal-rule {
     border-top: 0px;
-    color: hsl(215, 51%, 70%);
+    color: hsl(215, 32%, 27%);
     margin-top: 17px;
 }
 
