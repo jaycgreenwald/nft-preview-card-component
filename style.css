@@ -51,6 +51,7 @@ body {
     width: 278px;
     height: 278px;
     display: block;
+    cursor: pointer;
 }
 
 .card__title {
@@ -63,6 +64,7 @@ body {
 
 .card__title:hover {
     color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .card__desc {
