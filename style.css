@@ -31,31 +31,26 @@ body {
 }
 
 .card__hero {
-    position: relative;
-}
-
-.card__hero-img {
-    border-radius: 7px;
-    width: 100%;
+    background-image: url(images/image-equilibrium.jpg);
+    border-radius: 14px;
+    background-size: cover;
+    width: 278px;
+    height: 278px;
     display: block;
+    transition: all 250ms;
 }
 
-.card__hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
+.card__hero:hover::after {
+    content: '';
+    border-radius: 14px;
     background: hsla(178, 100%, 50%, .5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-}
-
-.card__hero-overlay:hover {
-    opacity: 1;
+    background-image: url(images/icon-view.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 278px;
+    height: 278px;
+    display: block;
 }
 
 .card__title {
@@ -63,6 +58,7 @@ body {
     font-weight: 600;
     color: hsl(0, 0%, 100%);
     margin-top: 26px;
+    transition: all 250ms;
 }
 
 .card__title:hover {
@@ -139,6 +135,7 @@ body {
 .card__author-link {
     text-decoration: none;
     color:hsl(0, 0%, 100%);
+    transition: all 250ms;
 }
 
 .card__author-link:hover {
@@ -146,18 +143,33 @@ body {
 } 
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px; 
+    text-align: center;
+    color:hsl(0, 0%, 100%);
 }
 
 .attribution__link {
-    color: hsl(228, 45%, 44%);
+    color: hsl(178, 100%, 50%);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 500px) {
     .card {
         width: 350px;
     }
     
+    .card__hero {
+        background-image: url(images/image-equilibrium.jpg);
+        width: 302px;
+        height: 302px;
+        border-radius: 14px;
+        background-size: cover;
+    }
+
+    .card__hero:hover::after {
+        width: 302px;
+        height: 302px;
+    }
+
     .card__desc {
         margin-top: 14px;
     }
